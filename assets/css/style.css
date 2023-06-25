@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: rgb(184, 183, 165);
+    --secondary: rgb(221, 190, 169);
+    --white: #fff;
+    --h: #4e4e4e;
+    --p: #c6c6c6;
+}
+
+body{
+    font-family: 'Passion One', cursive;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+.nav-link{
+    color: var(--white);
+}
+
+.active, .nav-link:hover{
+    color: var(--h) !important;
+}
+
+.mk-w-90{
+    width: 90%;
+}
+
+.mk-w-80{
+    width: 80%;
+}
+
+.text-primary{
+    color: var(--h) !important;
+}
+
+.text-secondary{
+    color: var(--p) !important;
+}
+
+.mk-btn{
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.btn:hover{
+    color: var(--secondary);
+}
+
+.mk-w-fit{
+    width:fit-content;
+}
+
+span{
+    color: var(--primary);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.mk-height{
+    height: 320px;
+}
+
+.mk-block{
+    margin-bottom: 7%;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+}
+
+.mk-bg-primary{
+    background-color: rgba(184, 183, 165, 0.5);
+}
+
+.mk-bg-secondary{
+    background-color: rgba(221, 190, 169, 0.5);
+}
+
+.mk-block-2{
+    padding: 50px;
+    border-radius: 30px;
+}
+
+#slider, #cover-block{
+    position: relative;
+}
+
+#slider {
+    top: -50px; 
+}
+
+#service-1, #service-2, #service-3, #service-4, #service-5{
+    position: relative;
+}
+
+#service-1 img{
+    border-radius: 50px 50px 50px 0%;
+}
+
+#service-2 img,  #service-4 img{
+    border-radius: 50px 0% 0% 50px;
+}
+#service-3 img,#service-5 img{
+    border-radius: 0% 50px 50px 0%;
+}
+
+#service-2::after, #service-3::before, #service-4::after, #service-5::before{
+    content: "";
+    width: 230px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#service-2::after, #service-4::after{
+    right: 0px;
+    top: 0px;
+    
+    clip-path: polygon(100% 0%,100% 50%,100% 100%,0% 100%,25% 50%,0% 0%);
+    
+    background-color: rgba(221, 190, 169, 0.5);
+    
+}
+
+#service-3::before, #service-5::before{
+    left: 0px;
+    top: 0px;
+
+    clip-path: polygon(100% 0%,75% 50%,100% 100%,0% 100%,0% 50%,0% 0%);
+    
+    background-color: rgba(184, 183, 165, 0.5);
+    
+}
+
+#cover-content, #about{
+    position: relative;
+}
+
+header::after, #cover-content::before, #about::before, .shape::before{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+header::after{
+    top: -48px;
+    right: 0px;
+    width: 42%;
+    height: 30%;
+    border-radius: 200px 0px 0px 0px;
+    background-color: var(--primary);
+    z-index: -1;
+}
+
+#cover-content::before{
+    bottom: 0px;
+    left: 0px;
+    width: 8%;
+    height: 25%;
+    border-radius: 0% 100% 0% 0%;
+    background-color: var(--primary);
+}
+
+
+#about::before, .shape::before{
+    background-color: var(--secondary);
+    top: 0px;
+    left: 0px;
+    border-radius: 0% 0% 100% 0%;
+}
+
+#about::before{
+    width: 8%;
+    height: 18%;
+}
+
+
+.shape::before{
+    width: 18%;
+    height: 27%;
+    border-radius: 0% 0% 100% 0%;
+    clip-path: polygon(50% 0%, 100% 0%, 39% 28.5%, 36.2% 30%, 33.4% 33.3%, 0% 100%, 0% 100%, 0% 43%, 0% 0%);
+}
+
+i.fa.fa-couch{
+    font-size: 50px;
+    color: var(--secondary);
+}
+
+.fa-solid.fa-arrow-right{
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--primary);
+}
+
+.navbar-brand img{
+    width: 300px;
+    height: 200px;
+}
+
+h2::before, h2::after{
+    content: "";
+    border: 2px solid var(--primary);
+    margin: 10px;
+}
+
+#soc ul li{
+    display: inline;
+}
+
+#soc ul li a{
+    font-size: 30px;
+    background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: rgba(221, 190, 169, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright{
+    width: 40%;
+}
+
+#form-block, #form-block input[type=text], #form-block input[type=email], #message, .accordion-button:not(.collapsed){
+    border: 3px solid var(--primary);
+}
+
+#form-block .btn:hover{
+    background-color: var(--white);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: rgba(221, 190, 169, 0.5);
+    box-shadow: none;
+    color: #000;
+}
