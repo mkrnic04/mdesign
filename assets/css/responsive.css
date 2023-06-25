@@ -102,7 +102,7 @@
         order: -1;
     }
 
-    .col-4.mid{
+    .col-5.mid{
         display: none;
      }
 }
@@ -172,6 +172,10 @@
         height: 15%;
     }
 
+    header#home::after{
+        border-radius: 103px 0px 0px 220px;
+    }
+
     header p.text-center{
         text-align: left !important;
     }
@@ -229,6 +233,14 @@
         margin-bottom: 30px;
     }
 
+    #service-2 img, #service-4 img{
+        border-radius: 50px 50px 0% 50px;
+    } 
+
+    #service-3 img, #service-5 img{
+        border-radius: 50px 50px 50px 0%;
+    }
+
     #process .row{
         justify-content: center !important;
     }
@@ -238,7 +250,7 @@
         margin: 20px 0px;
     }
 
-    .col-4.mid{
+    .col-5.mid{
         display: block;
      }
 }

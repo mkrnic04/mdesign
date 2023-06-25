@@ -168,10 +168,14 @@ header::after{
     top: -48px;
     right: 0px;
     width: 42%;
-    height: 30%;
-    border-radius: 200px 0px 0px 0px;
+    height: 24%;
+    border-radius: 103px 0px 0px 220px;
     background-color: var(--primary);
     z-index: -1;
+}
+
+header#home::after{
+    border-radius: 200px 0px 0px 0px;
 }
 
 #cover-content::before{
