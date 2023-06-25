@@ -4,10 +4,6 @@
         font-size: 21px !important;
     }
 
-    #cover .mk-block{
-        margin-bottom: 0px;
-    }
-
     #cover h1{
         font-size: 30px;
     }
@@ -21,6 +17,14 @@
 @media screen and (max-width: 1440px){
     header::after{
         height: 28%;
+    }
+
+    #about::before {
+        height: 14%;
+    }
+
+    #cover .mk-block{
+        margin-bottom: 0px;
     }
 
     #cover-block{
@@ -60,6 +64,10 @@
 
     header::after{
         height: 24%;
+    }
+
+    #about::before {
+        height: 12%;
     }
 
     i.fa.fa-couch{
@@ -103,6 +111,10 @@
 @media screen and (max-width: 1024px){
     header::after{
         height: 20%;
+    }
+
+    #about::before {
+        height: 5%;
     }
 
     #cover h1{
@@ -264,6 +276,10 @@
 
     #service-1 p, #service-2 p, #service-3 p, #service-4 p, #service-5 p{
         font-size: 14px !important;
+    }
+
+    footer .fs-5{
+        font-size: 16px !important;
     }
 }
 
